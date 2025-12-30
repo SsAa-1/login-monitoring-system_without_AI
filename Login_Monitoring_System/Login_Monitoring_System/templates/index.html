@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Anomaly System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            padding: 50px 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 40px 60px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            max-width: 300px;
+            width: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h2 {
+            margin: 0 0 20px 0;
+            font-size: 1.8rem;
+        }
+
+        .card p {
+            font-size: 1.1rem;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            border-radius: 8px;
+            background-color: #fff;
+            color: #2575fc;
+            font-weight: 700;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .card a:hover {
+            background-color: #e0e0e0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .container {
+                gap: 20px;
+            }
+
+            .card {
+                padding: 30px 40px;
+            }
+
+            .card h2 {
+                font-size: 1.5rem;
+            }
+
+            .card p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                gap: 15px;
+                padding: 40px 15px;
+            }
+
+            .card {
+                padding: 25px 35px;
+            }
+
+            .card h2 {
+                font-size: 1.3rem;
+            }
+
+            .card p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Login Anomaly System</h1>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Verifica Login</h2>
+            <p>Aggiungi un nuovo login e verifica se è normale o sospetto.</p>
+            <a href="/check">Vai a Verifica</a>
+        </div>
+
+        <div class="card">
+            <h2>Dashboard</h2>
+            <p>Visualizza tutti i login registrati e filtra per Normal o Suspicious.</p>
+            <a href="/dashboard">Vai alla Dashboard</a>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Login Anomaly System
+    </footer>
+</body>
+</html>
